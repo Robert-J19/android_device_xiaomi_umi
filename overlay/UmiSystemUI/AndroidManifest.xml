@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2020 The LineageOS Project
+<!-- 
+     Copyright (C) 2021 Paranoid Android
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,7 +14,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <!-- The minimum bottom margin of the keyguard security container -->
-    <dimen name="kg_security_container_min_bottom_margin">500px</dimen>
-</resources>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.systemui.umi">
+
+    <overlay
+        android:isStatic="true"
+        android:priority="850"
+        android:targetPackage="com.android.systemui" />
+</manifest>
