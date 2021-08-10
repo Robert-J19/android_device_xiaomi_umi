@@ -693,7 +693,6 @@ vendor/lib/vendor.qti.gnss@4.0-service.so
 vendor/lib/vendor.qti.gnss@4.0.so
 vendor/lib/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
-vendor/lib64/libaoa.so
 vendor/lib64/libcacertclient.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libgarden_haltests_e2e.so
@@ -1402,7 +1401,6 @@ vendor/firmware/aw8697_haptic.bin
 vendor/firmware/aw8697_rtp_1.bin
 
 # WiFi
-vendor/bin/cnss-daemon
 vendor/bin/nv_mac
 
 # WiFi Display
