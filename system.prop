@@ -2,10 +2,6 @@
 ro.sf.blurs_are_expensive=1
 ro.surface_flinger.supports_background_blur=1
 
-# Display
-debug.sf.disable_backpressure=1
-debug.sf.enable_hwc_vds=1
-
 # GPS
 persist.vendor.overlay.izat.optin=rro
 
