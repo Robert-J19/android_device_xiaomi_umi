@@ -204,6 +204,18 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.mi.usb.sh \
+    init.qti.dcvs.sh \
+    init.target.rc \
+    init.xiaomi.rc \
+    ueventd.xiaomi.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+
 # Native Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -231,6 +243,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     display \
     gps \
+    init \
     media-legacy \
     nq-nfc \
     overlay \
@@ -239,25 +252,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     usb \
     vibrator \
     wlan
-
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.class_main.sh \
-    init.mdm.sh \
-    init.qcom.class_core.sh \
-    init.mi.btmac.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sh \
-    init.qcom.rc \
-    init.recovery.qcom.rc \
-    init.target.rc \
-    fstab.qcom \
-    init.xiaomi.rc \
-    ueventd.qcom.rc
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # RenderScript
 PRODUCT_PACKAGES += \
