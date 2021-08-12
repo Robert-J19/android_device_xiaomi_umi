@@ -21,7 +21,10 @@ vendor/lib64/libacdbrtac.so
 
 # ADSP
 vendor/bin/adsprpcd
+vendor/bin/dspservice
+vendor/bin/loadalgo
 vendor/etc/init/vendor.qti.adsprpc-service.rc
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsprpc.so
@@ -32,6 +35,7 @@ vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
+vendor/lib64/libloadalgo_stub.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # ADSP Modules
@@ -71,32 +75,59 @@ vendor/lib/rfsa/adsp/misound_res.bin
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
+# Audio Configs
+vendor/etc/audio_configs.xml
+vendor/etc/audio_configs_stock.xml
+vendor/etc/audio_effects.conf
+vendor/etc/audio_effects.xml
+vendor/etc/audio_io_policy.conf
+vendor/etc/audio_platform_info_intcodec.xml
+vendor/etc/cirrus.cfg
+vendor/etc/mixer_paths.xml
+vendor/etc/mixer_paths_overlay_dynamic.xml
+vendor/etc/mixer_paths_overlay_static.xml
+vendor/etc/sound_trigger_mixer_paths.xml
+vendor/etc/sound_trigger_platform_info.xml
+
 # Audio
+vendor/bin/audioflacapp
 vendor/lib/hw/audio.primary.kona.so
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
+vendor/lib/liba2dpoffload.so
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudioalsa.so
 vendor/lib/libaudioconfigstore.so
+vendor/lib/libaudioparsers.so
 vendor/lib/libaudioroute_ext.so
+vendor/lib/libhdmipassthru.so
 vendor/lib/libqtigef.so
 vendor/lib/libssrec.so
+vendor/lib/libsurround_3mic_proc.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib/vendor.qti.voiceprint@1.0.so
 vendor/lib/vndk/libxlog.so
 vendor/lib64/hw/audio.primary.kona.so
 vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
+vendor/lib64/liba2dpoffload.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioconfigstore.so
+vendor/lib64/libaudioparsers.so
 vendor/lib64/libaudioroute_ext.so
+vendor/lib64/libhdmipassthru.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libssrec.so
 vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib64/vendor.qti.voiceprint@1.0.so
 
 # Audio FX Modules
 vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libmisoundfx.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
@@ -784,12 +815,15 @@ vendor/lib/libadpcmdec.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2svarnn.so
 vendor/lib/libcapiv2vop.so
+vendor/lib/libdrc.so
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libsmwrapper.so
+vendor/lib/libstagefright_soft_qtiflacdec.so
+vendor/lib/libtinycompress.so
 vendor/lib64/hw/sound_trigger.primary.kona.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2svarnn.so
@@ -799,6 +833,8 @@ vendor/lib64/libgcs-ipc.so
 vendor/lib64/libgcs-osal.so
 vendor/lib64/libgcs.so
 vendor/lib64/liblistensoundmodel2.so
+vendor/lib64/libstagefright_soft_qtiflacdec.so
+vendor/lib64/libtinycompress.so
 
 # Machine Learning
 vendor/bin/npu_launcher
