@@ -78,7 +78,3 @@ persist.vendor.radio.redir_party_num=1
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.telephony.default_cdma_sub=0
 ro.vendor.radio.5g=3
-
-# WiFi Display
-persist.debug.wfd.enable=1
-persist.sys.wfd.virtual=0
