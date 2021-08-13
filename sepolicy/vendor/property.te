@@ -1,1 +1,7 @@
 type vendor_fp_prop, property_type;
+
+# Camera
+vendor_internal_prop(vendor_camera_sensor_prop)
+
+# Thermald
+type thermal_normal_prop, property_type;
