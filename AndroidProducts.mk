@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_umi.mk
+    $(LOCAL_DIR)/radiant_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_umi-user \
-    aosp_umi-userdebug \
-    aosp_umi-eng
+    radiant_umi-user \
+    radiant_umi-userdebug \
+    radiant_umi-eng
