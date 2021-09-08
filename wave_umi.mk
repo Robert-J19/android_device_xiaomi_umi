@@ -11,15 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lmi device
 $(call inherit-product, device/xiaomi/umi/device.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/radiant/config/common_full_phone.mk)
+# Inherit some common WaveOS stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+$(call inherit-product, vendor/wave/configs/common.mk)
 
 # Include PixelExperience common configuration
-TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := radiant_umi
+PRODUCT_NAME := wave_umi
 PRODUCT_DEVICE := umi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 10
