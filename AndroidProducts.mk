@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/radiant_umi.mk
+    $(LOCAL_DIR)/wave_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-    radiant_umi-user \
-    radiant_umi-userdebug \
-    radiant_umi-eng
+    wave_umi-user \
+    wave_umi-userdebug \
+    wave_umi-eng
