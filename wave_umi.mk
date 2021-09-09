@@ -17,7 +17,7 @@ $(call inherit-product, vendor/wave/configs/common.mk)
 
 # Include PixelExperience common configuration
 TARGET_GAPPS_ARCH := arm64
-
+TARGET_INCLUDE_GAPPS := false
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := wave_umi
 PRODUCT_DEVICE := umi
