@@ -13,13 +13,13 @@ $(call inherit-product, device/xiaomi/umi/device.mk)
 
 # Inherit some common WaveOS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/wave/configs/common.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Include PixelExperience common configuration
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_GAPPS := false
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := wave_umi
+PRODUCT_NAME := dot_umi
 PRODUCT_DEVICE := umi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 10
