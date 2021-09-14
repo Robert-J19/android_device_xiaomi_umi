@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/wave_umi.mk
+    $(LOCAL_DIR)/dot_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-    wave_umi-user \
-    wave_umi-userdebug \
-    wave_umi-eng
+    dot_umi-user \
+    dot_umi-userdebug \
+    dot_umi-eng
